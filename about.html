@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us - Pascal Jewelry</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.32/dist/sweetalert2.min.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="CSS/about.css">
+  <style>
+
+  </style>
+</head>
+
+<body>
+  <!-- Floating Contact Button -->
+  <div class="contact-icon-btn" data-bs-toggle="offcanvas" data-bs-target="#contactOffcanvas" aria-label="Contact Us">
+    <i class="bi bi-headset" style="font-size: 1.5rem;"></i>
+  </div>
+
+  <!-- Contact Offcanvas -->
+  <div class="offcanvas offcanvas-start offcanvas-contact" tabindex="-1" id="contactOffcanvas" aria-labelledby="contactOffcanvasLabel">
+    <div class="offcanvas-header border-bottom">
+      <h5 class="offcanvas-title fw-bold" id="contactOffcanvasLabel" style="font-size: 1.5rem;">
+        <i class="bi bi-chat-dots me-2"></i>Contact Us
+      </h5>
+      <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    
+    <div class="offcanvas-body">
+      <div class="text-center mb-4">
+        <img src="IMAGES/PASCAL.png" alt="Pascal Logo" class="img-fluid" style="max-width: 150px;">
+        <p class="text-muted mt-3" style="font-size: 0.95rem;">We'd love to hear from you!</p>
+      </div>
+
+      <div class="mb-4">
+        <h6 class="fw-bold mb-3" style="font-size: 1.1rem;">Get in Touch</h6>
+        
+        <div class="d-flex align-items-start mb-3">
+          <i class="bi bi-telephone-fill me-3 mt-1" style="font-size: 1.2rem; color: #000;"></i>
+          <div>
+            <p class="mb-0 fw-semibold" style="font-size: 0.95rem;">Phone</p>
+            <a href="tel:+923355562218" class="text-dark text-decoration-none" style="font-size: 0.9rem;">+92 335 5562218</a>
+          </div>
+        </div>
+
+        <div class="d-flex align-items-start mb-3">
+          <i class="bi bi-whatsapp me-3 mt-1" style="font-size: 1.2rem; color: #25D366;"></i>
+          <div>
+            <p class="mb-0 fw-semibold" style="font-size: 0.95rem;">WhatsApp</p>
+            <a href="https://wa.me/923355562218" target="_blank" class="text-dark text-decoration-none" style="font-size: 0.9rem;">+92 335 5562218</a>
+          </div>
+        </div>
+
+        <div class="d-flex align-items-start mb-3">
+          <i class="bi bi-envelope-fill me-3 mt-1" style="font-size: 1.2rem; color: #000;"></i>
+          <div>
+            <p class="mb-0 fw-semibold" style="font-size: 0.95rem;">Email</p>
+            <a href="mailto:pascaljewels@gmail.com" class="text-dark text-decoration-none" style="font-size: 0.9rem;">pascaljewels@gmail.com</a>
+          </div>
+        </div>
+
+        <div class="d-flex align-items-start mb-3">
+          <i class="bi bi-geo-alt-fill me-3 mt-1" style="font-size: 1.2rem; color: #000;"></i>
+          <div>
+            <p class="mb-0 fw-semibold" style="font-size: 0.95rem;">Location</p>
+            <p class="text-muted mb-0" style="font-size: 0.9rem;">Karachi, Pakistan</p>
+          </div>
+        </div>
+      </div>
+
+      <hr>
+
+      <div class="mb-4">
+        <h6 class="fw-bold mb-3" style="font-size: 1.1rem;">Business Hours</h6>
+        <div class="d-flex justify-content-between mb-2" style="font-size: 0.9rem;">
+          <span class="text-muted">Monday - Saturday</span>
+          <span class="fw-semibold">10:00 AM - 8:00 PM</span>
+        </div>
+        <div class="d-flex justify-content-between" style="font-size: 0.9rem;">
+          <span class="text-muted">Sunday</span>
+          <span class="fw-semibold">11:00 AM - 6:00 PM</span>
+        </div>
+      </div>
+
+      <hr>
+
+      <div class="mb-4">
+        <h6 class="fw-bold mb-3" style="font-size: 1.1rem;">Follow Us</h6>
+        <div class="d-flex gap-3">
+          <a href="#" class="text-dark" style="font-size: 1.8rem;" title="Instagram">
+            <i class="bi bi-instagram"></i>
+          </a>
+          <a href="#" class="text-dark" style="font-size: 1.8rem;" title="Facebook">
+            <i class="bi bi-facebook"></i>
+          </a>
+          <a href="https://wa.me/923355562218" target="_blank" class="text-success" style="font-size: 1.8rem;" title="WhatsApp">
+            <i class="bi bi-whatsapp"></i>
+          </a>
+          <a href="#" class="text-dark" style="font-size: 1.8rem;" title="Pinterest">
+            <i class="bi bi-pinterest"></i>
+          </a>
+        </div>
+      </div>
+
+      <div class="mt-4">
+        <a href="https://wa.me/923355562218?text=Hello,%20I'm%20interested%20in%20your%20jewelry%20collection" target="_blank" class="btn btn-success w-100 py-2" style="border-radius: 25px;">
+          <i class="bi bi-whatsapp me-2"></i>Chat on WhatsApp
+        </a>
+      </div>
+    </div>
+  </div>
+
+ 
+   <!-- Top Bar -->
+<marquee behavior="scroll" direction="Left" scrollamount="25" style="background-color: #000;">
+  <div class="container-fluid" style="background-color: black; color: white;">
+    <div class="row">
+      <div class="col-sm-4 text-center">
+        <p class="mb-0 py-2" style="font-size: 1rem;">Pakistani Brand!</p>
+      </div>
+      <div class="col-sm-4 text-center">
+        <p class="mb-0 py-2" style="font-size: 1rem;">Save up 30% off on jewellery</p>
+      </div>
+      <div class="col-sm-4 text-center">
+        <p class="mb-0 py-2" style="font-size: 1rem;">Reasonable Prices!</p>
+      </div>
+    </div>
+  </div>
+</marquee>
+
+  <!-- Logo -->
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-12 bg-white">
+        <div class="text-center my-4">
+          <img src="IMAGES/PASCAL.png" alt="Pascal Logo" class="img-fluid" style="max-width: 500px; height: auto;">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg" style="background-color: #ffffff; border: 0.5px solid #e0e0e0;">
+    <div class="container justify-content-between">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="categories.html">Categories</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="gallery.html">Gallery</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="comparison.html">Comparison</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="feedback.html">Feedback</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="d-flex align-items-center">
+        <div class="nav-item me-3" onclick="openSearch()" style="cursor: pointer;">
+          <i class="bi bi-search" style="font-size: 1.2rem;"></i>
+        </div>
+
+        <div class="nav-item" onclick="openCart()" style="cursor: pointer;">
+          <i class="bi bi-bag" style="font-size: 1.2rem;"></i>
+          <span class="cart-badge" id="cartBadge">0</span>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Search Modal -->
+  <div class="search-modal" id="searchModal">
+    <div class="search-content">
+      <button class="search-close" onclick="closeSearch()">&times;</button>
+      <h4 class="mb-4" style="font-size: 1.5rem;">Search Products</h4>
+      <div class="search-input-wrapper">
+        <input type="text" class="search-input" id="searchInput" placeholder="Search for jewelry..." autocomplete="off">
+        <i class="bi bi-search search-icon"></i>
+      </div>
+      <div class="search-results" id="searchResults"></div>
+    </div>
+  </div>
+
+  <!-- Hero Section -->
+ 
+   <div class="container-fluid py-5">
+    <div class="container text-center">
+      <h1 class="display-4 fw-bold mb-3"  data-aos="zoom-in-up">About Pascal Jewellery</h1>
+      <p class="lead text-muted" style="font-size: 1.1rem;" data-aos="zoom-in-up">Elegance Redefined, Beauty Crafted</p>
+    </div>
+  </div>
+
+  <!-- About Content -->
+  <section class="about-content">
+    <div class="container">
+      <!-- Our Story Section -->
+      <div class="story-section" data-aos="fade-up" style="box-shadow: 0 2px 4px black;">
+        <div class="row align-items-center">
+          <div class="col-lg-6 mb-4 mb-lg-0">
+            <div class="story-image">
+              <img src="https://images.unsplash.com/photo-1651160670627-2896ddf7822f?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8andlbGxlcnl8ZW58MHwxfDB8fHww&auto=format&fit=crop&w=1200&q=80" alt="Pascal Jewelry Collection">
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="story-text">
+              <h2>Our Story</h2>
+              <p>•  Welcome to Pascal Imitation Jewellery, where elegance meets affordability</p>
+              <p>•  Our journey began with a simple vision: to offer women stunning jewellery pieces.</p>
+              <p>•  At Pascal, we believe every woman deserves to feel special and confident..</p>
+              <p>•  Our jewellery is more than just an accessory—it's a statement of grace,.</p>
+              <p>• 	We take pride in offering designs that blend tradition with modern flair, celebrating the art of timeless beauty.</p>
+              <p>• 	Each jewel tells a story—of heritage, passion, and the spirit of those who wear it.</p>
+              <p>• 	Crafted with precision and love, our jewellery is more than just an accessory—it’s a statement of grace.</p>
+              <p>• 	Whether you're dressing up for a wedding, celebrating a festival, or adding sparkle to your everyday look, our diverse collection has something perfect for every occasion.</p>
+              <p>• 	Each design is a result of meticulous attention to detail and a deep appreciation for artistry.</p>
+              <p>• 	Our commitment lies in offering jewellery that resonates with individuality and elegance.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Our Values Section -->
+      <div class="values-section" data-aos="fade-up">
+        <div class="row text-center mb-5">
+          <div class="col-12">
+            <h2 class="fw-bold mb-3" style="font-size: 1.8rem;">Product Comparison</h2>
+            <p class="lead">The principles that guide everything we do</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4 mb-4">
+            <div class="value-card" data-aos="fade-up" data-aos-delay="100">
+              <div class="value-icon">
+                <i class="bi bi-gem"></i>
+              </div>
+              <h4>Premium Quality</h4>
+              <p>We source the finest materials to ensure each piece meets our high standards of quality and durability.</p>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="value-card" data-aos="fade-up" data-aos-delay="200">
+              <div class="value-icon">
+                <i class="bi bi-palette"></i>
+              </div>
+              <h4>Unique Designs</h4>
+              <p>Our exclusive collections feature distinctive designs that blend traditional craftsmanship with modern aesthetics.</p>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="value-card" data-aos="fade-up" data-aos-delay="300">
+              <div class="value-icon">
+                <i class="bi bi-currency-dollar"></i>
+              </div>
+              <h4>Affordable Luxury</h4>
+              <p>Experience the elegance of fine jewellery at prices that won't break the bank, with special offers year-round.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Mission & Vision Section -->
+      <div class="mission-vision" data-aos="fade-up">
+        <div class="row">
+          <div class="col-lg-6 mb-4">
+            <div class="mission-card" data-aos="fade-right">
+              <h3><i class="bi bi-bullseye me-2"></i>Our Mission</h3>
+              <p>To empower individuals with beautiful, affordable jewellery that celebrates their individuality and enhances their confidence. We strive to deliver exceptional quality and customer service, making luxury accessible to everyone without compromising on style or craftsmanship.</p>
+            </div>
+          </div>
+          <div class="col-lg-6 mb-4">
+            <div class="vision-card" data-aos="fade-left">
+              <h3><i class="bi bi-eye me-2"></i>Our Vision</h3>
+              <p>To become Pakistan's most trusted and beloved imitation jewellery brand, known for our commitment to quality, innovation, and customer satisfaction. We envision a world where every person can express their unique style with confidence through our beautiful, accessible jewellery collections.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Why Choose Us Section -->
+      <div class="why-choose-us" data-aos="fade-up">
+        <div class="row text-center mb-5">
+          <div class="col-12">
+            <h2 class="mb-3">Why Choose Pascal?</h2>
+            <p class="lead">Experience the difference with our commitment to excellence</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="benefit-item" data-aos="fade-right">
+              <div class="benefit-icon">
+                <i class="bi bi-check-circle-fill"></i>
+              </div>
+              <div class="benefit-text">
+                <h5>Guaranteed Quality</h5>
+                <p>Every piece undergoes strict quality checks to ensure lasting beauty and durability.</p>
+              </div>
+            </div>
+            <div class="benefit-item" data-aos="fade-right" data-aos-delay="100">
+              <div class="benefit-icon">
+                <i class="bi bi-check-circle-fill"></i>
+              </div>
+              <div class="benefit-text">
+                <h5>Wide Variety</h5>
+                <p>Hundreds of designs for every taste and occasion, from traditional to contemporary.</p>
+              </div>
+            </div>
+            <div class="benefit-item" data-aos="fade-right" data-aos-delay="200">
+              <div class="benefit-icon">
+                <i class="bi bi-check-circle-fill"></i>
+              </div>
+              <div class="benefit-text">
+                <h5>Fast Delivery</h5>
+                <p>Quick and reliable shipping across Pakistan with secure packaging.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="benefit-item" data-aos="fade-left">
+              <div class="benefit-icon">
+                <i class="bi bi-check-circle-fill"></i>
+              </div>
+              <div class="benefit-text">
+                <h5>Secure Shopping</h5>
+                <p>Safe payment gateway and buyer protection for worry-free purchases.</p>
+              </div>
+            </div>
+            <div class="benefit-item" data-aos="fade-left" data-aos-delay="100">
+              <div class="benefit-icon">
+                <i class="bi bi-check-circle-fill"></i>
+              </div>
+              <div class="benefit-text">
+                <h5>Expert Support</h5>
+                <p>Our team is ready to help with styling advice and product recommendations.</p>
+              </div>
+            </div>
+            <div class="benefit-item" data-aos="fade-left" data-aos-delay="200">
+              <div class="benefit-icon">
+                <i class="bi bi-check-circle-fill"></i>
+              </div>
+              <div class="benefit-text">
+                <h5>Easy Returns</h5>
+                <p>Hassle-free returns within 7 days if you're not completely satisfied.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+    <!-- Offcanvas Cart -->
+    <div class="offcanvas offcanvas-end offcanvas-cart" tabindex="-1" id="cartOffcanvas"
+      aria-labelledby="cartOffcanvasLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="cartOffcanvasLabel" style="font-size: 1.4rem;">Shopping Cart</h5>
+        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <div id="cartItems"></div>
+        <div class="cart-total" id="cartTotal" style="display: none;">
+          <div class="d-flex justify-content-between mb-2">
+            <span>Subtotal:</span>
+            <span class="fw-bold" id="subtotalAmount">$0</span>
+          </div>
+          <div class="d-flex justify-content-between mb-2">
+            <span>Shipping:</span>
+            <span class="fw-bold">Free</span>
+          </div>
+          <hr>
+          <div class="d-flex justify-content-between">
+            <span class="fw-bold">Total:</span>
+            <span class="fw-bold" id="totalAmount">$0</span>
+          </div>
+          <button class="checkout-btn">Proceed to Checkout</button>
+        </div>
+      </div>
+    </div>
+
+  <!-- Footer -->
+  <footer class="bg-white text-dark border-top mt-5 pt-4 pb-2">
+    <div class="container">
+      <div class="row text-center text-md-start">
+        <div class="col-md-4 mb-4">
+          <h5 class="fw-bold" style="font-size: 1.3rem;">Pascal</h5>
+          <p class="mb-2" style="font-size: 1.05rem;">Elegance redefined.</p>
+          <div>
+            <a href="#" class="text-dark me-3"><i class="bi bi-instagram" style="font-size: 1.3rem;"></i></a>
+            <a href="#" class="text-dark me-3"><i class="bi bi-facebook" style="font-size: 1.3rem;"></i></a>
+            <a href="#" class="text-dark me-3"><i class="bi bi-whatsapp" style="font-size: 1.3rem;"></i></a>
+            <a href="#" class="text-dark"><i class="bi bi-pinterest" style="font-size: 1.3rem;"></i></a>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <h6 class="fw-bold" style="font-size: 1.15rem;">Quick Links</h6>
+          <ul class="list-unstyled" style="font-size: 1.05rem;">
+            <li><a href="index.html" class="text-dark text-decoration-none">Home</a></li>
+            <li><a href="categories.html" class="text-dark text-decoration-none">Categories</a></li>
+            <li><a href="comparison.html" class="text-dark text-decoration-none">Comparison</a></li>
+            <li><a href="gallery.html" class="text-dark text-decoration-none">Gallery</a></li>
+            <li><a href="about.html" class="text-dark text-decoration-none">About</a></li>
+          </ul>
+        </div>
+        <div class="col-md-4 mb-4">
+          <h6 class="fw-bold" style="font-size: 1.15rem;">Contact Us</h6>
+          <p class="mb-1" style="font-size: 1.05rem;"><i class="bi bi-whatsapp"></i> +92 335 5562218</p>
+          <p class="mb-1" style="font-size: 1.05rem;"><i class="bi bi-envelope"></i> pascaljewels@gmail.com</p>
+          <p style="font-size: 1.05rem;"><i class="bi bi-geo-alt"></i> Karachi, Pakistan</p>
+        </div>
+      </div>
+      <div class="text-center border-top pt-3" style="font-size: 15px;">
+        &copy; 2025 Pascal Imitation Jewellery. All rights reserved.
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.32/dist/sweetalert2.all.min.js"></script>
+  <script src="script.js"></script>
+  <script>
+    // Initialize AOS
+    AOS.init({
+      duration: 1000,
+      once: true,
+      offset: 100
+    });
+  </script>
+</body>
+</html>

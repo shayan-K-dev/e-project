@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home - Pascal Jewelry</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.32/dist/sweetalert2.min.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="/CSS/comparison.css">
+  <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <!-- Floating Contact Button -->
+  <div class="contact-icon-btn" data-bs-toggle="offcanvas" data-bs-target="#contactOffcanvas" aria-label="Contact Us">
+    <i class="bi bi-headset" style="font-size: 1.5rem;"></i>
+  </div>
+
+  <!-- Contact Offcanvas -->
+  <div class="offcanvas offcanvas-start offcanvas-contact" tabindex="-1" id="contactOffcanvas"
+    aria-labelledby="contactOffcanvasLabel">
+    <div class="offcanvas-header border-bottom">
+      <h5 class="offcanvas-title fw-bold" id="contactOffcanvasLabel" style="font-size: 1.5rem;">
+        <i class="bi bi-chat-dots me-2"></i>Contact Us
+      </h5>
+      <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+
+    <div class="offcanvas-body">
+      <div class="text-center mb-4">
+        <img src="IMAGES/PASCAL.png" alt="Pascal Logo" class="img-fluid" style="max-width: 150px;">
+        <p class="text-muted mt-3" style="font-size: 0.95rem;">We'd love to hear from you!</p>
+      </div>
+
+      <div class="mb-4">
+        <h6 class="fw-bold mb-3" style="font-size: 1.1rem;">Get in Touch</h6>
+
+        <div class="d-flex align-items-start mb-3">
+          <i class="bi bi-telephone-fill me-3 mt-1" style="font-size: 1.2rem; color: #000;"></i>
+          <div>
+            <p class="mb-0 fw-semibold" style="font-size: 0.95rem;">Phone</p>
+            <a href="tel:+923355562218" class="text-dark text-decoration-none" style="font-size: 0.9rem;">+92 335
+              5562218</a>
+          </div>
+        </div>
+
+        <div class="d-flex align-items-start mb-3">
+          <i class="bi bi-whatsapp me-3 mt-1" style="font-size: 1.2rem; color: #25D366;"></i>
+          <div>
+            <p class="mb-0 fw-semibold" style="font-size: 0.95rem;">WhatsApp</p>
+            <a href="https://wa.me/923355562218" target="_blank" class="text-dark text-decoration-none"
+              style="font-size: 0.9rem;">+92 335 5562218</a>
+          </div>
+        </div>
+
+        <div class="d-flex align-items-start mb-3">
+          <i class="bi bi-envelope-fill me-3 mt-1" style="font-size: 1.2rem; color: #000;"></i>
+          <div>
+            <p class="mb-0 fw-semibold" style="font-size: 0.95rem;">Email</p>
+            <a href="mailto:pascaljewels@gmail.com" class="text-dark text-decoration-none"
+              style="font-size: 0.9rem;">pascaljewels@gmail.com</a>
+          </div>
+        </div>
+
+        <div class="d-flex align-items-start mb-3">
+          <i class="bi bi-geo-alt-fill me-3 mt-1" style="font-size: 1.2rem; color: #000;"></i>
+          <div>
+            <p class="mb-0 fw-semibold" style="font-size: 0.95rem;">Location</p>
+            <p class="text-muted mb-0" style="font-size: 0.9rem;">Karachi, Pakistan</p>
+          </div>
+        </div>
+      </div>
+
+      <hr>
+
+      <div class="mb-4">
+        <h6 class="fw-bold mb-3" style="font-size: 1.1rem;">Business Hours</h6>
+        <div class="d-flex justify-content-between mb-2" style="font-size: 0.9rem;">
+          <span class="text-muted">Monday - Saturday</span>
+          <span class="fw-semibold">10:00 AM - 8:00 PM</span>
+        </div>
+        <div class="d-flex justify-content-between" style="font-size: 0.9rem;">
+          <span class="text-muted">Sunday</span>
+          <span class="fw-semibold">11:00 AM - 6:00 PM</span>
+        </div>
+      </div>
+
+      <hr>
+
+      <div class="mb-4">
+        <h6 class="fw-bold mb-3" style="font-size: 1.1rem;">Follow Us</h6>
+        <div class="d-flex gap-3">
+          <a href="#" class="text-dark" style="font-size: 1.8rem;" title="Instagram">
+            <i class="bi bi-instagram"></i>
+          </a>
+          <a href="#" class="text-dark" style="font-size: 1.8rem;" title="Facebook">
+            <i class="bi bi-facebook"></i>
+          </a>
+          <a href="https://wa.me/923355562218" target="_blank" class="text-success" style="font-size: 1.8rem;"
+            title="WhatsApp">
+            <i class="bi bi-whatsapp"></i>
+          </a>
+          <a href="#" class="text-dark" style="font-size: 1.8rem;" title="Pinterest">
+            <i class="bi bi-pinterest"></i>
+          </a>
+        </div>
+      </div>
+
+      <div class="mt-4">
+        <a href="https://wa.me/923355562218?text=Hello,%20I'm%20interested%20in%20your%20jewelry%20collection"
+          target="_blank" class="btn btn-success w-100 py-2" style="border-radius: 25px;">
+          <i class="bi bi-whatsapp me-2"></i>Chat on WhatsApp
+        </a>
+      </div>
+    </div>
+  </div>
+   <!-- Top Bar -->
+<marquee behavior="scroll" direction="Left" scrollamount="25" style="background-color: #000;">
+  <div class="container-fluid" style="background-color: black; color: white;">
+    <div class="row">
+      <div class="col-sm-4 text-center">
+        <p class="mb-0 py-2" style="font-size: 1rem;">Pakistani Brand!</p>
+      </div>
+      <div class="col-sm-4 text-center">
+        <p class="mb-0 py-2" style="font-size: 1rem;">Save up 30% off on jewellery</p>
+      </div>
+      <div class="col-sm-4 text-center">
+        <p class="mb-0 py-2" style="font-size: 1rem;">Reasonable Prices!</p>
+      </div>
+    </div>
+  </div>
+</marquee>
+
+  <!-- Logo -->
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-12 bg-white">
+        <div class="text-center my-4">
+          <img src="IMAGES/PASCAL.png" alt="Pascal Logo" class="img-fluid" style="max-width: 500px; height: auto;">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg" style="background-color: #ffffff; border: 0.5px solid #e0e0e0;">
+    <div class="container justify-content-between">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="categories.html">Categories</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="gallery.html">Gallery</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="comparison.html">Comparison</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="feedback.html">Feedback</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="d-flex align-items-center">
+        <div class="nav-item me-3" onclick="openSearch()" style="cursor: pointer;">
+          <i class="bi bi-search" style="font-size: 1.2rem;"></i>
+        </div>
+
+        <div class="nav-item" onclick="openCart()" style="cursor: pointer;">
+          <i class="bi bi-bag" style="font-size: 1.2rem;"></i>
+          <span class="cart-badge" id="cartBadge">0</span>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <div class="container-fluid py-5">
+    <div class="container text-center">
+      <h1 class="display-4 fw-bold mb-3"  data-aos="zoom-in-up">Compare Jewelry</h1>
+      <p class="lead text-muted" style="font-size: 1.1rem;" data-aos="zoom-in-up">Find the perfect piece by comparing features, prices, and
+        styles</p>
+    </div>
+  </div>
+
+  <div class="container my-5">
+    <div class="row mb-4">
+      <div class="col-12 text-center">
+        <h2 class="fw-bold mb-3" style="font-size: 1.8rem;">Product Comparison</h2>
+        <p class="text-muted" style="font-size: 1rem;">Compare up to three products to make the best choice.</p>
+      </div>
+    </div>
+
+    <div class="row mb-5 justify-content-center">
+      <div class="col-lg-8 col-md-10">
+        <div class="text-center">
+          <button class="btn btn-dark px-4 py-2 rounded-pill shadow-sm" type="button"
+            onclick="toggleComparisonSearch(true)">
+            <i class="bi bi-plus-circle me-2"></i> Add Product for Comparison
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="comparison-table-container">
+      <div class="comparison-table-container">
+        <div class="comparison-row comparison-header">
+          <div class="feature-col">
+            <span class="fw-bold">Features</span>
+          </div>
+          <div class="product-col placeholder-col text-center" id="productColPlaceholder1">
+            <button class="btn btn-outline-dark btn-sm" onclick="toggleComparisonSearch(true)">
+              <i class="bi bi-plus-circle"></i> Add Product
+            </button>
+          </div>
+          <div class="product-col placeholder-col text-center" id="productColPlaceholder2">
+            <button class="btn btn-outline-dark btn-sm" onclick="toggleComparisonSearch(true)">
+              <i class="bi bi-plus-circle"></i> Add Product
+            </button>
+          </div>
+          <div class="product-col placeholder-col text-center" id="productColPlaceholder3">
+            <button class="btn btn-outline-dark btn-sm" onclick="toggleComparisonSearch(true)">
+              <i class="bi bi-plus-circle"></i> Add Product
+            </button>
+          </div>
+        </div>
+
+        <div id="comparisonTableBody">
+          <div class="comparison-row">
+            <div class="feature-col fw-bold">Product Image</div>
+            <div class="product-col product-image-row" id="imgRow1"></div>
+            <div class="product-col product-image-row" id="imgRow2"></div>
+            <div class="product-col product-image-row" id="imgRow3"></div>
+          </div>
+          <div class="comparison-row">
+            <div class="feature-col fw-bold">Product Name</div>
+            <div class="product-col product-name-row" id="nameRow1"></div>
+            <div class="product-col product-name-row" id="nameRow2"></div>
+            <div class="product-col product-name-row" id="nameRow3"></div>
+          </div>
+          <div class="comparison-row">
+            <div class="feature-col fw-bold">Price</div>
+            <div class="product-col product-price-row" id="priceRow1"></div>
+            <div class="product-col product-price-row" id="priceRow2"></div>
+            <div class="product-col product-price-row" id="priceRow3"></div>
+          </div>
+          <div class="comparison-row">
+            <div class="feature-col fw-bold">Material</div>
+            <div class="product-col product-material-row" id="materialRow1">N/A</div>
+            <div class="product-col product-material-row" id="materialRow2">N/A</div>
+            <div class="product-col product-material-row" id="materialRow3">N/A</div>
+          </div>
+          <div class="comparison-row">
+            <div class="feature-col fw-bold">Type</div>
+            <div class="product-col product-type-row" id="typeRow1">N/A</div>
+            <div class="product-col product-type-row" id="typeRow2">N/A</div>
+            <div class="product-col product-type-row" id="typeRow3">N/A</div>
+          </div>
+          <div class="comparison-row">
+            <div class="feature-col fw-bold">Warranty</div>
+            <div class="product-col product-warranty-row" id="warrantyRow1">N/A</div>
+            <div class="product-col product-warranty-row" id="warrantyRow2">N/A</div>
+            <div class="product-col product-warranty-row" id="warrantyRow3">N/A</div>
+          </div>
+          <div class="comparison-row">
+            <div class="feature-col fw-bold">Availability</div>
+            <div class="product-col product-availability-row" id="availabilityRow1">N/A</div>
+            <div class="product-col product-availability-row" id="availabilityRow2">N/A</div>
+            <div class="product-col product-availability-row" id="availabilityRow3">N/A</div>
+          </div>
+          <div class="comparison-row">
+            <div class="feature-col fw-bold">Action</div>
+            <div class="product-col product-action-row" id="actionRow1"></div>
+            <div class="product-col product-action-row" id="actionRow2"></div>
+            <div class="product-col product-action-row" id="actionRow3"></div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid py-5 my-5" style="background-color: #f8f9fa;">
+      <div class="container">
+        <div class="row text-center">
+          <div class="col-12 mb-4">
+            <h2 class="fw-bold" style="font-size: 1.8rem;">Why Compare with Pascal?</h2>
+            <p class="text-muted" style="font-size: 1rem;">Make informed decisions with our detailed comparison features
+            </p>
+          </div>
+        </div>
+        <div class="row g-4">
+          <div class="col-md-4" data-aos="fade-up" data-aos-duration="800">
+            <div class="text-center p-4">
+              <div class="mb-3">
+                <i class="bi bi-gem" style="font-size: 3rem; color: #2c3e50;"></i>
+              </div>
+              <h5 class="fw-bold mb-3" style="font-size: 1.2rem;">Quality Assurance</h5>
+              <p class="text-muted" style="font-size: 0.95rem;">All our products are crafted with premium materials and
+                undergo strict quality checks</p>
+            </div>
+          </div>
+          <div class="col-md-4" data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">
+            <div class="text-center p-4">
+              <div class="mb-3">
+                <i class="bi bi-shield-check" style="font-size: 3rem; color: #2c3e50;"></i>
+              </div>
+              <h5 class="fw-bold mb-3" style="font-size: 1.2rem;">Warranty Protection</h5>
+              <p class="text-muted" style="font-size: 0.95rem;">Enjoy peace of mind with our comprehensive warranty
+                coverage on all jewelry pieces</p>
+            </div>
+          </div>
+          <div class="col-md-4" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
+            <div class="text-center p-4">
+              <div class="mb-3">
+                <i class="bi bi-truck" style="font-size: 3rem; color: #2c3e50;"></i>
+              </div>
+              <h5 class="fw-bold mb-3" style="font-size: 1.2rem;">Free Shipping</h5>
+              <p class="text-muted" style="font-size: 0.95rem;">Get free shipping on all orders with secure packaging
+                and timely delivery</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container my-5 text-center">
+      <h3 class="fw-bold mb-3" style="font-size: 1.6rem;">Still Need Help Choosing?</h3>
+      <p class="text-muted mb-4" style="font-size: 1rem;">Our jewelry experts are here to assist you</p>
+      <a href="categories.html" class="btn btn-dark px-5 py-3 me-3" style="border-radius: 25px; font-size: 1rem;">Browse
+        All Products</a>
+      <a href="feedback.html" class="btn btn-outline-dark px-5 py-3"
+        style="border-radius: 25px; font-size: 1rem;">Contact Us</a>
+    </div>
+
+    <div class="search-modal comparison-search-modal" id="comparisonSearchModal">
+      <div class="search-content">
+        <button class="search-close" onclick="toggleComparisonSearch(false)">&times;</button>
+        <h4 class="mb-4" style="font-size: 1.5rem;">Select Product for Comparison</h4>
+        <div class="search-input-wrapper">
+          <input type="text" class="search-input" id="comparisonModalInput" placeholder="Search and select a product..."
+            autocomplete="off">
+          <i class="bi bi-search search-icon"></i>
+        </div>
+        <div class="search-results" id="comparisonModalResults">
+          <p class="text-muted mt-3 text-center">Start typing to see product suggestions.</p>
+        </div>
+        <p class="text-muted mt-3 text-center" style="font-size: 0.9rem;">Comparison list can hold up to 3 products.</p>
+      </div>
+    </div>
+
+    <!-- Offcanvas Cart -->
+
+    <!-- Search Modal -->
+    <div class="search-modal" id="searchModal">
+      <div class="search-content">
+        <button class="search-close" onclick="closeSearch()">&times;</button>
+        <h4 class="mb-4" style="font-size: 1.5rem;">Search Products</h4>
+        <div class="search-input-wrapper">
+          <input type="text" class="search-input" id="searchInput" placeholder="Search for jewelry..."
+            autocomplete="off">
+          <i class="bi bi-search search-icon"></i>
+        </div>
+        <div class="search-results" id="searchResults"></div>
+      </div>
+    </div>
+
+
+
+    <!-- Offcanvas Cart -->
+    <div class="offcanvas offcanvas-end offcanvas-cart" tabindex="-1" id="cartOffcanvas"
+      aria-labelledby="cartOffcanvasLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="cartOffcanvasLabel" style="font-size: 1.4rem;">Shopping Cart</h5>
+        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <div id="cartItems"></div>
+        <div class="cart-total" id="cartTotal" style="display: none;">
+          <div class="d-flex justify-content-between mb-2">
+            <span>Subtotal:</span>
+            <span class="fw-bold" id="subtotalAmount">$0</span>
+          </div>
+          <div class="d-flex justify-content-between mb-2">
+            <span>Shipping:</span>
+            <span class="fw-bold">Free</span>
+          </div>
+          <hr>
+          <div class="d-flex justify-content-between">
+            <span class="fw-bold">Total:</span>
+            <span class="fw-bold" id="totalAmount">$0</span>
+          </div>
+          <button class="checkout-btn">Proceed to Checkout</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-white text-dark border-top mt-5 pt-4 pb-2">
+      <div class="container">
+        <div class="row text-center text-md-start">
+          <div class="col-md-4 mb-4">
+            <h5 class="fw-bold" style="font-size: 1.3rem;">Pascal</h5>
+            <p class="mb-2" style="font-size: 1.05rem;">Elegance redefined.</p>
+            <div>
+              <a href="#" class="text-dark me-3"><i class="bi bi-instagram" style="font-size: 1.3rem;"></i></a>
+              <a href="#" class="text-dark me-3"><i class="bi bi-facebook" style="font-size: 1.3rem;"></i></a>
+              <a href="#" class="text-dark me-3"><i class="bi bi-whatsapp" style="font-size: 1.3rem;"></i></a>
+              <a href="#" class="text-dark"><i class="bi bi-pinterest" style="font-size: 1.3rem;"></i></a>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <h6 class="fw-bold" style="font-size: 1.15rem;">Quick Links</h6>
+            <ul class="list-unstyled" style="font-size: 1.05rem;">
+              <li><a href="index.html" class="text-dark text-decoration-none">Home</a></li>
+              <li><a href="categories.html" class="text-dark text-decoration-none">Categories</a></li>
+              <li><a href="comparison.html" class="text-dark text-decoration-none">Comparison</a></li>
+              <li><a href="gallery.html" class="text-dark text-decoration-none">Gallery</a></li>
+              <li><a href="contact.html" class="text-dark text-decoration-none">Contact</a></li>
+            </ul>
+          </div>
+          <div class="col-md-4 mb-4">
+            <h6 class="fw-bold" style="font-size: 1.15rem;">Contact Us</h6>
+            <p class="mb-1" style="font-size: 1.05rem;"><i class="bi bi-whatsapp"></i> +92 335 5562218</p>
+            <p class="mb-1" style="font-size: 1.05rem;"><i class="bi bi-envelope"></i> pascaljewels@gmail.com</p>
+            <p style="font-size: 1.05rem;"><i class="bi bi-geo-alt"></i> Karachi, Pakistan</p>
+          </div>
+        </div>
+        <div class="text-center border-top pt-3" style="font-size: 15px;">
+          &copy; 2025 Pascal Imitation Jewellery. All rights reserved.
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.32/dist/sweetalert2.all.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
