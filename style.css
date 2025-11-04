@@ -159,6 +159,12 @@
               font-size: 1rem;
             }
 
+            .btn:active, .search-result-item:active {
+              /* Slightly darken the background or apply a subtle scale effect */
+              transform: scale(0.98);
+              opacity: 0.8;
+          }
+
             .no-results {
               text-align: center;
               padding: 40px 20px;
@@ -191,7 +197,7 @@
 
             footer {
               background-color: #f8f9fa;
-              padding: 40px 0 20px;
+            
             }
 
             button,
@@ -1894,3 +1900,168 @@
         margin: 50px 0;
       }
     }
+    /* Box Sizing Reset: Crucial for predictable sizing */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/* Base Font Size for mobile */
+body {
+  font-size: 16px; 
+  line-height: 1.5;
+}
+/* --- 1. Logo Container and Image Responsiveness --- */
+
+/* The logo image itself */
+.logo-image img {
+  /* Use clamp for fluid scaling: Min size 150px, Max size 400px, 
+     Fluidly scales at 40% of the viewport width (vw) in between */
+  width: clamp(150px, 40vw, 400px) !important; 
+  height: auto;
+  
+  /* Ensure the inline style (max-width: 500px) is overridden and controlled here */
+  max-width: 100% !important; 
+  
+  display: block;
+  margin: 0 auto; /* Center the image */
+}
+
+/* Adjust margin/padding for mobile screens to save vertical space */
+@media (max-width: 576px) {
+  .logo-image div.text-center {
+      /* Reduce the large vertical margins on small screens */
+      margin-top: 1rem !important;
+      margin-bottom: 1rem !important;
+  }
+}
+/* --- 2. Marquee Bar Responsiveness (Top Bar) --- */
+
+marquee {
+  /* Ensure the marquee element itself is always full width */
+  width: 100%;
+}
+
+.marquee-bar .container-fluid {
+  /* Set display properties for the container inside the marquee */
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  /* Override Bootstrap row/col styles inside the marquee if needed */
+  flex-wrap: nowrap; /* Essential: Forces items to stay in one line */
+}
+
+/* Marquee text styling */
+.marquee-bar p {
+  /* Scale the font size for readability */
+  font-size: clamp(0.75rem, 1.5vw, 1rem) !important;
+  margin: 0;
+  padding: 0.3rem 1.5rem; /* Add horizontal padding to separate items */
+  white-space: nowrap; /* Keep the text on a single line */
+}
+
+/* Hide some items on very small screens to prevent crowding (Optional) */
+@media (max-width: 500px) {
+  /* Assuming these are the 2nd and 3rd column-like elements in the marquee's row */
+  .marquee-bar .col-sm-4:nth-child(2),
+  .marquee-bar .col-sm-4:nth-child(3) {
+      /* This will only display the "Pakistani Brand!" message on tiny screens */
+      display: none; 
+  }
+  .marquee-bar .col-sm-4:first-child {
+      /* Ensure the remaining visible item takes up the space */
+      width: 100%;
+  }
+}
+/* --- 3. Navbar Enhancement --- */
+
+/* Adjust spacing/sizing of primary nav links */
+.navbar-nav .nav-link {
+  padding: 0.5rem 1rem;
+  font-weight: 500;
+}
+
+/* Adjust the cart/search icons group on mobile */
+.navbar-collapse:not(.show) + .d-flex {
+  /* When the menu is collapsed (mobile), align icons to the right */
+  margin-left: auto; 
+}
+
+/* Ensure the cart badge looks good on small devices */
+.cart-badge {
+  position: absolute;
+  top: -5px;
+  right: -10px;
+  font-size: 0.7rem;
+  padding: 0.1rem 0.4rem;
+  border-radius: 50%;
+  /* Add color styles here */
+}
+
+/* Handle the icons container when the screen is small */
+@media (max-width: 991px) { /* Bootstrap's 'lg' breakpoint for navbar collapse */
+  .navbar .d-flex {
+      /* Reduce gap for mobile view inside the container */
+      gap: 15px; 
+      /* Add some padding to prevent icons from touching the edge */
+      padding-right: 15px;
+  }
+}
+/* --- Marquee Bar Responsiveness (Refined) --- */
+
+.marquee-bar {
+  /* Set core background/text properties */
+  background-color: #000;
+  color: white;
+  width: 100%;
+  /* Use padding to control the vertical height */
+  padding: 0.5rem 0; 
+}
+
+.marquee-content {
+  /* Ensure the container of items stays on one line */
+  white-space: nowrap; 
+  /* Use flex or inline-block to align the items */
+  display: inline-block; 
+}
+
+.marquee-item {
+  /* Scale the font size for perfect mobile readability */
+  font-size: clamp(0.8rem, 2vw, 1.1rem); 
+  
+  /* Add generous horizontal padding to space out the items in the scrolling row */
+  padding: 0 40px; 
+  
+  /* Center the text vertically within the bar */
+  line-height: 1.2; 
+  
+  /* Optional: Ensure the text is never selected while scrolling */
+  user-select: none;
+}
+
+/* Optional: Subtle adjustment for very large screens */
+@media (min-width: 1200px) {
+  .marquee-item {
+      padding: 0 60px; /* More spacing on large screens */
+  }
+}
+/* --- Change Navbar Toggler (Hamburger Icon) Color to Black --- */
+
+.navbar-toggler {
+  /* Optional: Remove border if you want a cleaner look */
+  border-color: rgba(0,0,0,.1); 
+  padding: 0.25rem 0.5rem; /* Standard Bootstrap padding */
+}
+
+.navbar-toggler-icon {
+  /* Use Bootstrap 5's variable for the hamburger icon filter */
+  /* This filter changes the default white icon to black (hue-rotate, invert, sepia) */
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='black' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
+}
+
+/* Optional: To remove the default blue focus outline */
+.navbar-toggler:focus {
+  text-decoration: none;
+  outline: 0;
+  box-shadow: none;
+}
